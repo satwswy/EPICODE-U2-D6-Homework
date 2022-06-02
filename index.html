@@ -63,11 +63,24 @@
             padding-top: 150px;
             font-family: 'Courier New', Courier, monospace;
         }
-        .pictures img {
+         img {
             object-fit: cover;
             width:  300px;
             height: 300px;
                     }
+        @keyframes fadedOpacity {
+            0% {
+             opacity: 0;
+                }
+            100% {
+             opacity: 1;
+                }
+        }
+        .jumbotron {
+           background-color:  rgb(0 123 255 / 25%) ;
+           animation: 1s ease-out 0s 1 fadedOpacity;
+        }
+
     </style>
 </head>
 <body>
@@ -100,7 +113,12 @@
           </form>
         </div>
       </nav>
-   
+      <div class="jumbotron jumbotron-fluid mb-0">
+        <div class="container">
+          <h1 class="display-4">Welcome to my music album page</h1>
+          <p class="lead">Navigate to favourite Albums , favourite music , Review section and much more!!</p>
+        </div>
+      </div>
     <section class="favourite-albums" id="section1">
     <h2 class="text-primary">My favourite Album</h2>
       <div class="container">
@@ -108,21 +126,37 @@
         <div class="row">
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
-                    <img class="card-img-top" src="https://i.ytimg.com/vi/rzgw0XldTC0/maxresdefault.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/7/7f/J_Balvin_and_Bad_Bunny_-_Oasis.png" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">J Balvin - Ambiente</h5>
-                      <p class="card-text">Subscribe to J Balvin's channel <br>Listen to J Balvin’s Top Hits on your favorite streaming platform</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <ul>
+                            <li>Album Title : Oasis</li>
+                            <li>Artist : J Balvin</li>
+                            <li>Year : 2019</li>
+                        </ul>
                     </div>
                 </div>
             </div>  
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
-                    <img class="card-img-top" src="https://i.ytimg.com/vi/rzgw0XldTC0/maxresdefault.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="https://upload.wikimedia.org/wikipedia/en/1/1a/J_Balvin_-_Colores.png?20200228001336" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">J Balvin - Ambiente</h5>
-                      <p class="card-text">Subscribe to J Balvin's channel <br>Listen to J Balvin’s Top Hits on your favorite streaming platform</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <ul>
+                          <li>Album Title : Colores</li>
+                          <li>Artist : J Balvin</li>
+                          <li>Year : 2020</li>
+                      </ul>
+                    </div>
+                </div>
+            </div> 
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="card">
+                    <img class="card-img-top" src="https://www.hit-channel.com/wp-content/uploads/2021/09/j-balvin-1519718551-696x464.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <ul>
+                            <li>Album Title : JOSE</li>
+                            <li>Artist : J Balvin</li>
+                            <li>Year : 2021</li>
+                        </ul>
                     </div>
                 </div>
             </div> 
@@ -130,29 +164,23 @@
                 <div class="card">
                     <img class="card-img-top" src="https://i.ytimg.com/vi/rzgw0XldTC0/maxresdefault.jpg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">J Balvin - Ambiente</h5>
-                      <p class="card-text">Subscribe to J Balvin's channel <br>Listen to J Balvin’s Top Hits on your favorite streaming platform</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <ul>
+                            <li>Album Title : Ambiente (single)</li>
+                            <li>Artist : J Balvin</li>
+                            <li>Year : 2018</li>
+                        </ul>
                     </div>
                 </div>
             </div> 
             <div class="col-sm-6 col-md-4 col-lg-3">
                 <div class="card">
-                    <img class="card-img-top" src="https://i.ytimg.com/vi/rzgw0XldTC0/maxresdefault.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="https://www.elsiglodedurango.com.mx/m/i/2018/02/669185.jpeg" alt="Card image cap">
                     <div class="card-body">
-                      <h5 class="card-title">J Balvin - Ambiente</h5>
-                      <p class="card-text">Subscribe to J Balvin's channel <br>Listen to J Balvin’s Top Hits on your favorite streaming platform</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div> 
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div class="card">
-                    <img class="card-img-top" src="https://i.ytimg.com/vi/rzgw0XldTC0/maxresdefault.jpg" alt="Card image cap">
-                    <div class="card-body">
-                      <h5 class="card-title">J Balvin - Ambiente</h5>
-                      <p class="card-text">Subscribe to J Balvin's channel <br>Listen to J Balvin’s Top Hits on your favorite streaming platform</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                        <ul>
+                            <li>Album Title : Ahora (single)</li>
+                            <li>Artist : J Balvin</li>
+                            <li>Year : 2018</li>
+                        </ul>
                     </div>
                 </div>
             </div>       
