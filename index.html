@@ -99,6 +99,24 @@
             margin-left: 425px;
             margin-right: 425px;
         }
+        .btn1 button {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            box-shadow: 5px 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        .btn1 button:hover{
+            left: 5px;
+            border: 1px solid;
+            padding: 10px;
+            box-shadow: 5px 10px #888888;    
+        }
+        .btn1 {
+            height: 150px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -260,7 +278,7 @@
     <section class="worst-albums" id="worst-section">
         <h1 class="text-danger">Worst Album List </h1>
         
-       <div class="row">
+       <div class="row mx-0">
         <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="card">
                 <img class="card-img-top" src="https://www.wikihow.com/images/thumb/1/11/Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg/v4-460px-Make-a-Photo-Album-from-Recycled-Materials-Step-11.jpg.webp" alt="Card image cap">
@@ -372,54 +390,73 @@
                 <th scope="col">Title</th>
                 <th scope="col">Artist</th>
                 <th scope="col">Duration</th>
+                <th scope="col">Delete</th>
               </tr>
             </thead>
             <tbody>
                 <tr>
-                    <th scope="row">3</th>
+                    <th scope="row">1</th>
                     <td>Ahora</td>
                     <td>J Balvin</td>
                     <td>04:07</td>
+                    <td><button type="button"  class="btn btn-danger">Danger</button></td>
                   </tr>
               <tr>
-                <th scope="row">1</th>
+                <th scope="row">2</th>
                 <td>Rosa</td>
                 <td>J Balvin</td>
                 <td>03:49</td>
+                <td><button type="button"  class="btn btn-danger">Danger</button></td>
               </tr>
               <tr>
-                <th scope="row">2</th>
+                <th scope="row">3</th>
                 <td>Rojo</td>
                 <td>J Balvin</td>
                 <td>04:45</td>
+                <td><button type="button"  class="btn btn-danger">Danger</button></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">4</th>
                 <td>Blanco</td>
                 <td>J Balvin</td>
                 <td>02:34</td>
+                <td><button type="button"  class="btn btn-danger">Danger</button></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">5</th>
                 <td>Morado</td>
                 <td>J Balvin</td>
                 <td>03:44</td>
+                <td><button type="button"  class="btn btn-danger">Danger</button></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">6</th>
                 <td>Gris</td>
                 <td>J Balvin</td>
                 <td>03:16</td>
+                <td><button type="button"  class="btn btn-danger">Danger</button></td>
               </tr>
               <tr>
-                <th scope="row">3</th>
+                <th scope="row">7</th>
                 <td>Ambiente</td>
                 <td>J Balvin</td>
                 <td>04:18</td>
+                <td><button type="button"  class="btn btn-danger">Danger</button></td>
               </tr>
-              
+           
             </tbody>
           </table>
+          <div class="btn1">
+            <button type="button" id="add-track">Add Track</button>
+        </div>
     </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+    crossorigin="anonymous"></script>
+    
 </body>
 </html>
